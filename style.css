@@ -1,0 +1,268 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+   height: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    /* background-color: #535353; */
+}
+.nav {
+    height: 12%;
+    width: 100%;
+    padding: 16px 40px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 14%;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    height:100% ;
+}
+.logo img{
+    height: 66%;
+}
+ /* a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+} */
+.elements{
+    display: flex;
+    justify-content: space-between;
+    gap: 15%;
+}
+.elements h3{
+    font-size: 90%;
+    font-weight: 600;
+}
+.icon{
+    margin-left: 34%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36%;
+}
+.icon i{
+    /* background-color: black; */
+    /* color: white; */
+    padding: 7px;
+    border-radius: 50%;
+}
+
+
+
+
+.section{
+    /* background-color: red; */
+    height: 80%;
+    width: 100%;
+    margin-top: 4vw;
+    display: flex;
+}
+.text{
+    height: 100%; 
+    width: 40%;
+    padding: 60px 72px;
+    /* background-color:blue; */
+}
+.text h5{
+  margin-bottom: 2%;
+    width: 95%;
+    font-size: 2.5vh;
+    color: #535353;
+}
+.text h1{ 
+ /* margin: 0% 0% 6% 0%; */
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size:8.5vh;
+}
+.text p{
+    width: 70%;
+    font-size: 15px;
+    margin: 10% 0% 8% 0%;
+}
+.text button{
+    background-color: #000;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 4% 14%;
+    border-radius: 0px 50px 50px;
+}
+/* --------------------------------------------- */
+.container{
+    height: 95%;
+    width: 60%;
+    position: relative; 
+    white-space:nowrap;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    /* animation-name: anime;
+    animation-delay: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+}
+@keyframes anime{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-109%);   
+    }
+}
+.container::-webkit-scrollbar{
+    display: none;
+    /* height:4px;
+    width: 5px;
+    background-color:transparent; */
+}
+
+.card{
+    height: 500px;
+    width: 340px;
+    position: relative;
+    background-color: #f5f5f5;
+box-shadow:  0 5px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 25px;
+
+    animation-name: anime;
+    animation-duration: 2s;
+    /* animation-delay: 2s; */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.card img{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    
+    top: 15%;
+    object-fit: cover;
+}
+.card h4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 3.2% 8%;
+    background-color: #535353;
+    color: white;
+    border-radius: 17px;
+}
+.card h5{
+    position: absolute;
+    bottom: 8%;
+    right: 0;
+    padding: 4% 10%;
+    background-color: #000;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border-radius: 17px;
+}
+
+@media (max-width:600px) {
+.elements h3{
+   display:none;
+}  
+.section{
+    height: 100%;
+    width: 100%;
+    margin-top: 4vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.text{
+    height: 100%; 
+    width: 100%;
+    padding: 12% 10%;
+}
+.text h5{
+  margin-bottom: 2%;
+    width: 95%;
+    font-size: 2.5vh;
+    color: #535353;
+}
+.text h1{ 
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size:8.5vh;
+}
+.text p{
+    width: 70%;
+    font-size: 15px;
+    margin: 10% 0% 8% 0%;
+}
+.text button{
+    background-color: #000;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10% 12%;
+    border-radius: 0px 50px 50px;
+}
+/* --------------------------------------------- */
+.container{
+    height: 60%;
+    width: 100%;
+    container: 10%;
+    position: relative; 
+    white-space:nowrap;
+    overflow-x:auto;
+    background-color: #535353;
+}
+.container::-webkit-scrollbar{
+    /* display: none; */
+    height:4px;
+    width: 5px;
+    background-color:transparent;
+}
+.container::-webkit-scrollbar-thumb{
+    background-color: rgba(55, 30, 21, 0.703);
+}
+
+.card{
+    height: 86%;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10% 0% 4% 20%;
+}
+.card img{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    object-position: 0% 81%;
+    top: 15%;
+    object-fit: cover;
+}
+.card h4{
+    position: absolute;
+    bottom: 1%;
+    right: 0;
+    padding: 4% 8%;
+    background-color: #535353;
+    color: white;
+    border-radius: 17px;
+}
+.card h5{
+    position: absolute;
+    bottom: 16%;
+    right: 0;
+    padding: 4% 10%;
+    background-color: #000;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border-radius: 17px;
+} 
+}
