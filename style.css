@@ -217,7 +217,7 @@ font-size:8.5vh;
     position: relative; 
     white-space:nowrap;
     overflow-x:auto;
-    background-color: #535353;
+    background-color: #c3c2c26e;
 }
 .container::-webkit-scrollbar{
     /* display: none; */
